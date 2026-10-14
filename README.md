@@ -2,7 +2,7 @@
 
 **面向对话记忆的本地消息规整与摘要组件。** 接收 User / Assistant 消息，返回固定五字段 JSON，用于记忆写入预处理、内容归档和后续检索。
 
-项目采用 **BERT 门控 + 一份 Qwen3.5-2B 基座 + 两个 LoRA 适配器**，提供 Python 接口、单样本 JSON 推理和支持断点续跑的批量 JSONL 推理。权重准备完成后，推理不依赖在线大模型 API。
+项目采用 **BERT 门控 + 一份 Qwen3.5-2B 基座 + 两个 LoRA 适配器**，提供 Python 接口、单样本 JSON 推理和支持断点续跑的批量 JSONL 推理。权重准备完成后，推理不依赖在线大模型 API。由于平台对上传文件大小限制，模型权重请从个人[魔搭主页](https://www.modelscope.cn/models/Fu496735182/extract_pruning)获取。
 
 ## 1. 项目背景与功能
 
@@ -403,16 +403,6 @@ python batch_predict.py --input input_batch.jsonl --output batch_results.jsonl -
 ```
 
 恢复时检查输入、配置、代码、提示词和模型是否变化。已有输出默认禁止覆盖；独立重跑请更换输出路径。`status=complete` 且输入输出行数一致，表示整批完成。
-
-### 6.5 可选：从自有 OSS 快照抽样
-
-核心入口接受任何符合接口规范的JSONL，不要求来自OSS。抽样工具仅适用于本项目快照结构：
-
-```bash
-python sample_oss.py --source /path/to/oss_data.jsonl --output sampled_inputs.jsonl --count 100 --seed 42
-```
-
-工具读取外层payload数组中的 `source=llm`、`type=user_pruning/assistant_pruning` 记录，只提取input。完整输入去重后随机抽样，再按源位置排序；不会复制监督标签或跨记录配对消息。来源行号保存在 `.sources.json`。
 
 ## 7. 配置说明
 
