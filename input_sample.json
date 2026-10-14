@@ -1,0 +1,6 @@
+{
+  "msgs": [
+    {"role": "User", "msg": "Remember this tomato-and-egg recipe: use 3 eggs, 2 tomatoes, salt, sugar, and oil. Beat the eggs with salt, cook them until set, and remove them. Stir-fry the tomatoes until juicy, season with salt and sugar, then return the eggs to the pan and mix well."},
+    {"role": "Assistant", "msg": ""}
+  ]
+}

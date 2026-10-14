@@ -1,0 +1,10 @@
+{
+  "base_model": "model/qwen_base",
+  "runtime": {"device": "auto", "dtype": "bfloat16", "attention_implementation": "sdpa"},
+  "gate": {"weights": "model/bert/best.safetensors", "threshold": 0.5, "max_length": 512, "device": "cpu"},
+  "assistant": {"adapter": "model/assistant_lora", "prompt": "prompts/assistant_prompt.txt", "max_seq_length": 6144, "max_new_tokens": 512},
+  "user": {
+    "adapter": "model/user_lora", "prompt": "prompts/user_prompt.txt", "max_seq_length": 3072, "max_new_tokens": 384,
+    "input": {"budget": 512, "head_ratio": 0.75, "use_assistant_note": false, "assistant_note_budget": 128, "user_budget_with_note": 384}
+  }
+}

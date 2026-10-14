@@ -1,0 +1,43 @@
+{
+  "signature": {
+    "input_sha256": "50cb772a196a0200f56d0fa155344be86e39d2cea950f6ccdf3f404db2b858a4",
+    "files": {
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\batch_predict.py": "b23b8ecf603abf0eddea7dbf665c29df6ca4e0a42c9249f83ca8c95e653055ef",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\config.json": "8cdf64cf3f85eacc7e965e5e039fbacf3404e12db1de15201e276a983b76de7f",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\gate_runtime.py": "d13e374ddb1b6a1a1328a668fab942513dd0e2dab49f585aef34bb0d56c9c85d",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\assistant_lora\\adapter_config.json": "be12698f3ca18f573e7993a882517c8e702d4f8af7987a4c8011b8cb44fb0b1e",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\assistant_lora\\adapter_model.safetensors": "ae761f80d5b0cdca417ed1081c7af49d65f2d3117adac2b84f1c8abf7893c398",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\best.safetensors": "6fff32609f7d14544e94669095bd188b4d135cf5c1df3f97ef32f4c554755323",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\config.json": "5adb1a24c1e1ab8572c7f33dc6eee7a5aaf824f94308c9cd13e0aa052b61ad82",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\tokenizer\\added_tokens.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\tokenizer\\config.json": "ce60aaa7b45136a78aa1f5f237b515e713f489abe6026bee85fae6e674207494",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\tokenizer\\special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\tokenizer\\tokenizer.json": "53ff61207898738bbdc000f38abebef01041c8d23b6270c11855fc692d0a3ad6",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\tokenizer\\tokenizer_config.json": "61785aeaba176fba6d6489f27dccfd2ddee6aee2af0e590451cab7d8b57e0874",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\bert\\tokenizer\\vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\qwen_base\\vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\user_lora\\adapter_config.json": "758755d72955120386ee593fff84e7964c764140c99801780c32a55baff79629",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\model\\user_lora\\adapter_model.safetensors": "19fc8ad83ec8503f56470005858cdb6f7fc75d94bdcd1ab080a5f47e2502620f",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\pipeline.py": "57071e08317ea411c93b074c21ae838bfa7b5eb19361304784adc6a20a57e7cb",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\prompts\\assistant_prompt.txt": "c3cdd8456ad9892350569a39aa6456949cc0722ed52de52d4a6bea2cc053ec3f",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\prompts\\user_prompt.txt": "b55f23e17e46c7e1a876b62acbbdbfaafb4903444652040b773099189c0e0979",
+      "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\user_runtime.py": "c212dfc48d668a7c40051874349ffb7544a263fe66ff1173d6704c4d3750be59"
+    }
+  },
+  "input": "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\input_batch.jsonl",
+  "output": "D:\\实习全部文档\\实习资料综合文件\\extract_pruning\\extract_pruning\\output_batch.jsonl",
+  "total": 100,
+  "completed": 100,
+  "status": "complete",
+  "elapsed_seconds_this_run": 152.61683679977432,
+  "output_sha256": "330604501f78e22078513381308e70aef871069b8b4399d1415d01f519e6782d"
+}
