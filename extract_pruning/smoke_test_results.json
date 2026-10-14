@@ -1,0 +1,120 @@
+[
+  {
+    "case": "user_recipe",
+    "output": {
+      "assistant_memory_hint": null,
+      "assistant_memory_type": null,
+      "should_process_user_msg": true,
+      "processed_user_msg": "I remembered a tomato-and-egg recipe: use 3 eggs, 2 tomatoes, salt, sugar, and oil. Beat the eggs with salt, cook them until set, and remove them. Stir-fry the tomatoes until juicy, season with salt and sugar, then return the eggs to the pan and mix well.",
+      "processed_user_topic_entity_hint": "tomato-and-egg recipe"
+    },
+    "diagnostics": {
+      "gate": {
+        "route": "model",
+        "reason": null,
+        "probability": 0.9634288549423218,
+        "threshold": 0.5,
+        "was_truncated": false
+      },
+      "user": {
+        "adapter": "user",
+        "user_tokens": 64,
+        "was_truncated": false,
+        "input_tokens": 1438,
+        "output_tokens": 78
+      }
+    }
+  },
+  {
+    "case": "empty",
+    "output": {
+      "assistant_memory_hint": null,
+      "assistant_memory_type": null,
+      "should_process_user_msg": null,
+      "processed_user_msg": null,
+      "processed_user_topic_entity_hint": null
+    },
+    "diagnostics": {}
+  },
+  {
+    "case": "short_user",
+    "output": {
+      "assistant_memory_hint": null,
+      "assistant_memory_type": null,
+      "should_process_user_msg": false,
+      "processed_user_msg": null,
+      "processed_user_topic_entity_hint": null
+    },
+    "diagnostics": {
+      "gate": {
+        "route": "model",
+        "reason": null,
+        "probability": 6.056759593775496e-05,
+        "threshold": 0.5,
+        "was_truncated": false
+      }
+    }
+  },
+  {
+    "case": "assistant_only",
+    "output": {
+      "assistant_memory_hint": "询问用户是需要修改文章还是总结文章。",
+      "assistant_memory_type": "question",
+      "should_process_user_msg": null,
+      "processed_user_msg": null,
+      "processed_user_topic_entity_hint": null
+    },
+    "diagnostics": {
+      "assistant": {
+        "adapter": "assistant",
+        "input_tokens": 1477,
+        "output_tokens": 25
+      }
+    }
+  },
+  {
+    "case": "both_with_file",
+    "output": {
+      "assistant_memory_hint": "询问用户是否需要修改文章或总结文章。",
+      "assistant_memory_type": "question",
+      "should_process_user_msg": true,
+      "processed_user_msg": "我说了请记住这个食谱。我复制了一段关于西红柿炒鸡蛋的食谱，包含3个鸡蛋、2个西红柿，以及先炒蛋盛出、再炒西红柿、最后混合的步骤。",
+      "processed_user_topic_entity_hint": "西红柿炒鸡蛋食谱"
+    },
+    "diagnostics": {
+      "gate": {
+        "route": "file_summary",
+        "reason": null
+      },
+      "assistant": {
+        "adapter": "assistant",
+        "input_tokens": 1514,
+        "output_tokens": 25
+      },
+      "user": {
+        "adapter": "user",
+        "user_tokens": 37,
+        "was_truncated": false,
+        "input_tokens": 1411,
+        "output_tokens": 51
+      }
+    }
+  },
+  {
+    "case": "assistant_again",
+    "output": {
+      "assistant_memory_hint": "询问用户是需要修改文章还是总结文章。",
+      "assistant_memory_type": "question",
+      "should_process_user_msg": null,
+      "processed_user_msg": null,
+      "processed_user_topic_entity_hint": null
+    },
+    "diagnostics": {
+      "assistant": {
+        "adapter": "assistant",
+        "input_tokens": 1477,
+        "output_tokens": 25
+      }
+    }
+  }
+]

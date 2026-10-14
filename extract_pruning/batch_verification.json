@@ -1,0 +1,13 @@
+{
+  "input_count": 100,
+  "output_count": 100,
+  "source_mapping_verified": true,
+  "schema_and_routes_verified": true,
+  "gate_counts": {
+    "False": 77,
+    "None": 12,
+    "True": 11
+  },
+  "assistant_generated": 21,
+  "elapsed_seconds": 152.61683679977432
+}
